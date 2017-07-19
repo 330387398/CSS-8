@@ -2,4 +2,192 @@ html{font-size:62.5%;}
 body{
 	margin: 0;
 	padding: 0;
+	background-color: rgb(250,250,250) !important;
+}
+.top{
+	background-color: white;
+	height: 3.3rem;
+}
+.phone{
+	position: absolute;
+	top: 0.8rem;
+	left: 10%;
+	color: rgb(41,176,120);
+}
+.top1,.top2,.top3{
+	background: url(../img/sprite.png)no-repeat;
+	background-size: 15rem;
+	width: 2.4rem;
+	float: right;
+	cursor: pointer;
+	margin: 0.6rem 0.6rem 0 0;
+}
+.top1{
+	background-position: 0 -86px;
+	height: 2.3rem;
+	margin: 0.6rem 10% 0 0;
+}
+.top2{
+	background-position: 0 -58px;
+	height: 2.2rem;
+}
+.top3{
+	background-position: 0 -31px;
+	height: 2.2rem;
+}
+@media only screen and (max-width: 400px) {
+	.phone{
+		left: 1rem;
+	}
+	.top1{
+		margin: 0.6rem 0.5rem 0 0;
+	}
+}
+.navbar-default{
+	background-color: rgb(41,176,120) !important;
+	border-radius: 0 !important;
+	border: none !important;
+	height: 8.5rem;
+}
+.logo1{
+	background: url(../img/sprite.png)no-repeat;
+	background-position: 0 -435px;
+	background-size: 15rem;
+	width: 10rem;
+	height: 4.6rem;
+	float: left;
+	margin: 2rem 0 0 10%;
+}
+.navbar-collapse{
+	margin: 0 0 0 50% !important;
+}
+li a{
+	height: 6.5rem;
+	width: 7rem;
+	text-align: center;
+	color: white !important;
+	font-size: 1.6rem;
+	margin: 2rem 0 0 0;
+}
+li a:hover{
+	border-bottom: 0.5rem solid white;
+}
+@media only screen and (max-width: 767px) {
+	.navbar-default{
+        height: auto;
+    }
+    .navbar-collapse{
+    	margin: 0 !important;
+    }
+    li a{
+    	margin: 0;
+    	width: auto;
+    	height: auto;
+    }
+    .logo{
+    	background-position: 0 -290px;
+		background-size: 10rem;
+		width: 10rem;
+		height: 3rem;
+		margin: 0.7rem 0 0 10%;
+    }
+}
+.banner img{
+	width: 100%;
+	margin: -1.6rem 0 2rem 0;
+}
+.border,.mainright{
+	background-color: white;
+	box-shadow: 0 0 0.1rem darkgray;
+	border-radius: 2%;
+}
+.title1{
+	font-weight: bold;
+	border-bottom: 1px solid lightgray;
+	font-size: 1.6rem;
+	text-align: center;
+	padding: 1rem 0;
+}
+.list{
+	color: rgb(41,176,120);
+	font-weight: bold;
+}
+.name{
+	margin: 2rem 0 2rem 35%;
+	cursor: pointer;
+}
+.circle{
+	float: left;
+	width: 0.8rem;
+	height: 0.8rem;
+	border: 2px solid rgb(249,163,114);
+	border-radius: 100%;
+	margin: 0.5rem 0.4rem 0 0;
+}
+.name:hover{
+	color: rgb(249,163,114);
+}
+.name:hover .circle{
+	background-color: rgb(249,163,114);
+}
+.mainright{
+	margin: 0 0 10rem 3rem;
+	overflow: hidden;
+}
+@media only screen and (max-width:991px ) {
+	.logo2{
+		margin: 0 0 0 12rem;
+	}
+}
+@media only screen and (max-width:767px ) {
+	.mainright{
+		margin: 2rem 0;
+	}
+	.logo2{
+		margin: 0 0 0 7rem;
+	}
+}
+.title2{
+	border-bottom: 1px solid lightgray;
+	padding: 0 2rem 0 0;
+}
+.logo2{
+	position: absolute;
+	left: 5%;
+}
+.text1{
+	color: darkgray;
+	margin: 2rem;
+}
+.text2{
+	margin: 5rem 0;
+	padding: 0 5rem;
+	color: darkgray;
+}
+.tree{
+	color: white;
+	padding: 1rem 0 0 0;
+	white-space:nowrap;
+}
+.web{
+	color: white;
+	white-space:nowrap;
+}
+.wechat{
+	color: white;
+	text-align: center;
+}
+@media only screen and (max-width:991px ) {
+	.web{
+		padding: 2rem 0;
+		margin: 2rem 0;
+		border-top: 1px solid white;
+		border-bottom: 1px solid white;
+	}
+}
+.bottom{
+	background-color: rgb(41,176,120);
+	color: white;
+	text-align: center;
+	border-top: 1px solid white;
 }
