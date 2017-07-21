@@ -529,21 +529,24 @@ li a:hover{
 		margin: 2rem 0 2rem 0;
 	}
 	.tree,.web{
-		margin: 0 0 0 30%;
+		/*margin: 0 0 0 30%;*/
 	}
 	.web{
 		padding: 2rem 0;
 	}
+	.wechat,.web,.tree{
+		margin: 2rem 0 0 -3rem;
+	}
 }
 @media only screen and (max-width:500px ) {
 	.tree,.web{
-		margin: 0 0 0 20%;
+		margin: 0 0 0 -1rem;
 	}
 	.wechat{
-		margin: 2rem 0 0 30%;
+		margin: 2rem 0 0 -1rem;
 	}
 }
-@media only screen and (max-width:400px ) {
+/*@media only screen and (max-width:400px ) {
 	.tree,.web{
 		margin: 0 0 0 15%;
 	}
@@ -558,7 +561,7 @@ li a:hover{
 	.wechat{
 		margin: 2rem 0 0 25%;
 	}
-}
+}*/
 .bottom1{
 	background-color: rgb(41,176,120);
 	padding: 2rem 10%;

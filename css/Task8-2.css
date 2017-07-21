@@ -539,7 +539,45 @@ li .menu:hover{
 .layer19{
 	color: darkgray;
 	line-height: 2rem;
-	padding: 1rem;
+	padding: 1rem 1rem 1rem 0;
+	margin: 0 0 0 -0.5rem;
+	font-size: 1rem;-webkit-transform:scale(0.9);
+	white-space: nowrap;
+}
+@media only screen and (max-width: 1200px) {
+	.layer19{
+		margin: 0 0 0 -1.1rem;
+	}
+}
+@media only screen and (max-width: 991px) {
+	.layer19{
+		margin: 0 0 0 -2rem;
+		font-size: 1rem;-webkit-transform:scale(0.8);
+	}
+}
+@media only screen and (max-width: 767px) {
+	.layer19{
+		margin: 0 0 0 1rem;
+		font-size: 1rem;-webkit-transform:scale(1);
+	}
+}
+@media only screen and (max-width: 450px) {
+	.layer19{
+		margin: 0 0 0 -2.3rem;
+		font-size: 1rem;-webkit-transform:scale(0.8);
+	}
+}
+@media only screen and (max-width: 390px) {
+	.layer19{
+		margin: 0 0 0 -3.7rem;
+		font-size: 1rem;-webkit-transform:scale(0.7);
+	}
+}
+@media only screen and (max-width: 350px) {
+	.layer19{
+		margin: 0 0 0 -3.3rem;
+		font-size: 1rem;-webkit-transform:scale(0.7);
+	}
 }
 .bottom1{
 	background-color: rgb(41,176,120);
@@ -612,34 +650,21 @@ li .menu:hover{
 		margin: 2rem 0 2rem 0;
 	}
 	.tree,.web{
-		margin: 0 0 0 30%;
+		/*margin: 0 0 0 30%;*/
 	}
 	.web{
 		padding: 2rem 0;
 	}
+	.wechat,.web,.tree{
+		margin: 2rem 0 0 -3rem;
+	}
 }
 @media only screen and (max-width:500px ) {
 	.tree,.web{
-		margin: 0 0 0 20%;
+		margin: 0 0 0 -1rem;
 	}
 	.wechat{
-		margin: 2rem 0 0 30%;
-	}
-}
-@media only screen and (max-width:400px ) {
-	.tree,.web{
-		margin: 0 0 0 15%;
-	}
-	.wechat{
-		margin: 2rem 0 0 30%;
-	}
-}
-@media only screen and (max-width:360px ) {
-	.tree,.web{
-		margin: 0 0 0 10%;
-	}
-	.wechat{
-		margin: 2rem 0 0 25%;
+		margin: 2rem 0 0 -1rem;
 	}
 }
 .bottom2{

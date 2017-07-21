@@ -380,34 +380,21 @@ li a:hover{
 		margin: 2rem 0 2rem 0;
 	}
 	.tree,.web{
-		margin: 0 0 0 30%;
+		/*margin: 0 0 0 30%;*/
 	}
 	.web{
 		padding: 2rem 0;
 	}
+	.wechat,.web,.tree{
+		margin: 2rem 0 0 -3rem;
+	}
 }
 @media only screen and (max-width:500px ) {
 	.tree,.web{
-		margin: 0 0 0 20%;
+		margin: 0 0 0 -1rem;
 	}
 	.wechat{
-		margin: 2rem 0 0 30%;
-	}
-}
-@media only screen and (max-width:400px ) {
-	.tree,.web{
-		margin: 0 0 0 15%;
-	}
-	.wechat{
-		margin: 2rem 0 0 30%;
-	}
-}
-@media only screen and (max-width:360px ) {
-	.tree,.web{
-		margin: 0 0 0 10%;
-	}
-	.wechat{
-		margin: 2rem 0 0 25%;
+		margin: 2rem 0 0 -1rem;
 	}
 }
 .bottom2{
