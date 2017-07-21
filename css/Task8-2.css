@@ -124,7 +124,7 @@ li .menu:hover{
     	width: 100%;
     }
     li .menu:hover{
-		border-bottom: none;
+		border-bottom: 1px solid white;
 	}
     li .menu{
     	margin: 0;
