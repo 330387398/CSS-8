@@ -6,12 +6,16 @@ body{
 }
 .top{
 	background-color: white;
+}
+.top0{
+	background-color: white;
 	height: 3.3rem;
+	width: 70%;
+	margin: 0 auto !important;
 }
 .phone{
 	position: absolute;
 	top: 0.8rem;
-	left: 10%;
 	color: rgb(41,176,120);
 }
 .top1,.top2,.top3{
@@ -25,7 +29,7 @@ body{
 .top1{
 	background-position: 0 -86px;
 	height: 2.3rem;
-	margin: 0.6rem 10% 0 0;
+	margin: 0.6rem 0 0 0;
 }
 .top2{
 	background-position: 0 -58px;
@@ -35,12 +39,23 @@ body{
 	background-position: 0 -31px;
 	height: 2.2rem;
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 767px) {
+	.top0{
+		width: 90%;
+	}
+}
+@media only screen and (max-width: 380px) {
+	.top0{
+		width: 100%;
+	}
 	.phone{
-		left: 1rem;
+		margin: 0 0 0 -1rem;
 	}
 	.top1{
-		margin: 0.6rem 0.5rem 0 0;
+		margin: 0.6rem -1rem 0 0;
+	}
+	.top2,.top3{
+		margin: 0.6rem 0.2rem 0 0;
 	}
 }
 .navbar-default{
@@ -53,17 +68,40 @@ body{
 	background: url(../img/sprite.png)no-repeat;
 	background-position: 0 -435px;
 	background-size: 15rem;
-	width: 10rem;
-	height: 4.6rem;
-	float: left;
-	margin: 2rem 0 0 10%;
+	width: 20rem;
+	height: 4.7rem;
+	position: absolute;
+	left: 17.2%;
+	top: 2rem;
+}
+@media only screen and (max-width: 767px) {
+	.logo1{
+		background-position: 0 -258px;
+		background-size: 9rem;
+		width: 10rem;
+		height: 2.8rem;
+		position: absolute;
+		left: 10%;
+		top: 0.7rem;
+	}
+}
+@media only screen and (max-width: 550px) {
+	.logo1{
+		left: 11%;
+	}
+}
+@media only screen and (max-width: 380px) {
+	.logo1{
+		left: 5%;
+	}
 }
 .navbar-collapse{
-	margin: 0 0 0 50% !important;
+	float: right;
+	margin-right: 12.5% !important;
 }
 li a{
 	height: 6.5rem;
-	width: 7rem;
+	width: 10rem;
 	text-align: center;
 	color: white !important;
 	font-size: 1.6rem;
@@ -72,25 +110,35 @@ li a{
 li a:hover{
 	border-bottom: 0.5rem solid white;
 }
+@media only screen and (max-width: 1000px) {
+	li a{
+		width: 7rem;
+	}
+}
 @media only screen and (max-width: 767px) {
 	.navbar-default{
         height: auto;
     }
     .navbar-collapse{
     	margin: 0 !important;
+    	width: 100%;
     }
+    li a:hover{
+		border-bottom: none;
+	}
     li a{
     	margin: 0;
     	width: auto;
     	height: auto;
     }
-    .logo{
-    	background-position: 0 -290px;
-		background-size: 10rem;
-		width: 10rem;
-		height: 3rem;
-		margin: 0.7rem 0 0 10%;
-    }
+}
+.navbar-header{
+	margin-right: 5% !important;
+}
+@media only screen and (max-width: 380px) {
+	.navbar-header{
+		margin-right: -0.5rem !important;
+	}
 }
 .banner img{
 	width: 100%;
@@ -101,20 +149,30 @@ li a:hover{
 	box-shadow: 0 0 0.1rem darkgray;
 	border-radius: 2%;
 }
+.title0{
+	margin: 0 0 2rem -2rem !important;
+}
+.title01{
+	font-size: 1.6rem;
+}
+.title02{
+	color: black;
+	text-decoration: none;
+}
+.company{
+	color: rgb(41,176,120);
+	text-decoration: none;
+}
 .title1{
 	font-weight: bold;
 	border-bottom: 1px solid lightgray;
 	font-size: 1.6rem;
 	text-align: center;
-	padding: 1rem 0;
-}
-.list{
-	color: rgb(41,176,120);
-	font-weight: bold;
+	padding: 1.5rem 0;
 }
 .name{
-	margin: 2rem 0 2rem 35%;
-	cursor: pointer;
+	color: rgb(41,176,120);
+	font-size: 1.4rem;
 }
 .circle{
 	float: left;
@@ -122,14 +180,87 @@ li a:hover{
 	height: 0.8rem;
 	border: 2px solid rgb(249,163,114);
 	border-radius: 100%;
-	margin: 0.5rem 0.4rem 0 0;
+	margin: 1.7rem 1rem 0 0;
 }
-.name:hover{
+#nav ul{
+	list-style:none; 
+	float:left; 
+	margin-top: 1rem; 
+	line-height: 4rem; 
+	margin-left: 20%;
+}
+@media only screen and (max-width: 1200px) {
+	#nav ul{
+		margin-left: 10%;
+	}
+}
+@media only screen and (max-width:991px ) {
+	#nav ul{
+		margin-left: -5%;
+	}
+}
+@media only screen and (max-width:767px ) {
+	#nav ul{
+		white-space: nowrap;
+		margin-left: -2%;
+	}
+	#nav ul li{
+		float: left;
+		width: 8rem;
+	}
+	.circle{
+		margin: 1.7rem 0.5rem 0 0;
+	}
+}
+@media only screen and (max-width:730px ) {
+	#nav ul{
+		margin-left: 3%;
+	}
+}
+@media only screen and (max-width:665px ) {
+	#nav ul{
+		margin-left: -3%;
+	}
+}
+@media only screen and (max-width:625px ) {
+	#nav ul{
+		margin-left: 3%;
+	}
+}
+@media only screen and (max-width:467px ) {
+	#nav ul{
+		margin-left: -3%;
+	}
+}
+@media only screen and (max-width:439px ) {
+	#nav ul{
+		margin-left: 5%;
+	}
+}
+@media only screen and (max-width:375px ) {
+	#nav ul{
+		margin-left: 10%;
+	}
+}
+@media only screen and (max-width:320px ) {
+	#nav ul{
+		margin-left: 5%;
+	}
+}
+#nav ul .name:hover{
 	color: rgb(249,163,114);
+	font-weight: bold;
 }
-.name:hover .circle{
+#nav ul .name:hover .circle{
 	background-color: rgb(249,163,114);
 }
+.navdown .name{
+	color: rgb(249,163,114);
+	font-weight: bold;
+	}
+.navdown .name .circle{
+	background-color: rgb(249,163,114);
+	}
 .mainright{
 	margin: 0 0 10rem 3rem;
 	overflow: hidden;
@@ -138,13 +269,27 @@ li a:hover{
 	.logo2{
 		margin: 0 0 0 12rem;
 	}
+	.text1{
+		padding: 0 5rem !important;
+		margin: 0 0 3rem 1rem !important;
+	}
 }
 @media only screen and (max-width:767px ) {
 	.mainright{
 		margin: 2rem 0;
 	}
 	.logo2{
-		margin: 0 0 0 7rem;
+		margin: 0 0 0 35%;
+	}
+}
+@media only screen and (max-width:430px ) {
+	.logo2{
+		margin: 0 0 0 30%;
+	}
+}
+@media only screen and (max-width:340px ) {
+	.logo2{
+		margin: 0 0 0 25%;
 	}
 }
 .title2{
@@ -164,30 +309,111 @@ li a:hover{
 	padding: 0 5rem;
 	color: darkgray;
 }
-.tree{
-	color: white;
-	padding: 1rem 0 0 0;
-	white-space:nowrap;
+.bottom1{
+	background-color: rgb(41,176,120);
+	padding: 2rem 10%;
 }
-.web{
-	color: white;
-	white-space:nowrap;
+.skill1{
+	font-size: 1.6rem;
+	margin: -0.5rem 0 0 0;
+}
+.skill2{
+	display: flex;
+	margin: 5rem 0 0 0;
+}
+.skill3{
+	cursor: pointer;
+}
+.skill3:hover{
+	border-bottom: 1px solid white;
+}
+.skill4{
+	display: flex;
+}
+.skill5{
+	margin: 1.7rem 0 0 0;
+	cursor: pointer;
+}
+.skill6{
+	margin: 1.7rem 0 0 4rem;
+	cursor: pointer;
+}
+.skill5:hover{
+	border-bottom: 1px solid white;
+}
+.skill6:hover{
+	border-bottom: 1px solid white;
 }
 .wechat{
 	color: white;
-	text-align: center;
+	float: right;
+	margin: 0 0 0 28%;
 }
-@media only screen and (max-width:991px ) {
-	.web{
-		padding: 2rem 0;
-		margin: 2rem 0;
-		border-top: 1px solid white;
-		border-bottom: 1px solid white;
+.text8{
+	margin: 0 0 0.5rem 0.2rem;
+	white-space:nowrap;
+}
+.tree,.web{
+	color: white;
+	padding: 1rem 0 0 0;
+	white-space:nowrap;
+	margin: 0 0 0 4%;
+}
+@media only screen and (max-width:1360px ) {
+	.wechat{
+		margin: 0 0 0 40%;
+	}
+	.tree{
+		margin: 0 0 0 -5%;
 	}
 }
-.bottom{
+@media only screen and (max-width:991px ) {
+	.wechat{
+		margin: 2rem 0 0 40%;
+	}
+	.web{
+		margin: 0 0 0 20%;
+	}
+}
+@media only screen and (max-width:767px ) {
+	.skill2{
+		margin: 2rem 0 2rem 0;
+	}
+	.tree,.web{
+		margin: 0 0 0 30%;
+	}
+	.web{
+		padding: 2rem 0;
+	}
+}
+@media only screen and (max-width:500px ) {
+	.tree,.web{
+		margin: 0 0 0 20%;
+	}
+	.wechat{
+		margin: 2rem 0 0 30%;
+	}
+}
+@media only screen and (max-width:400px ) {
+	.tree,.web{
+		margin: 0 0 0 15%;
+	}
+	.wechat{
+		margin: 2rem 0 0 30%;
+	}
+}
+@media only screen and (max-width:360px ) {
+	.tree,.web{
+		margin: 0 0 0 10%;
+	}
+	.wechat{
+		margin: 2rem 0 0 25%;
+	}
+}
+.bottom2{
 	background-color: rgb(41,176,120);
 	color: white;
 	text-align: center;
 	border-top: 1px solid white;
+	line-height: 3rem;
 }

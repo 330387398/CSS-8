@@ -6,12 +6,16 @@ body{
 }
 .top{
 	background-color: white;
+}
+.top0{
+	background-color: white;
 	height: 3.3rem;
+	width: 70%;
+	margin: 0 auto !important;
 }
 .phone{
 	position: absolute;
 	top: 0.8rem;
-	left: 10%;
 	color: rgb(41,176,120);
 }
 .top1,.top2,.top3{
@@ -25,7 +29,7 @@ body{
 .top1{
 	background-position: 0 -86px;
 	height: 2.3rem;
-	margin: 0.6rem 10% 0 0;
+	margin: 0.6rem 0 0 0;
 }
 .top2{
 	background-position: 0 -58px;
@@ -35,12 +39,23 @@ body{
 	background-position: 0 -31px;
 	height: 2.2rem;
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 767px) {
+	.top0{
+		width: 90%;
+	}
+}
+@media only screen and (max-width: 380px) {
+	.top0{
+		width: 100%;
+	}
 	.phone{
-		left: 1rem;
+		margin: 0 0 0 -1rem;
 	}
 	.top1{
-		margin: 0.6rem 0.5rem 0 0;
+		margin: 0.6rem -1rem 0 0;
+	}
+	.top2,.top3{
+		margin: 0.6rem 0.2rem 0 0;
 	}
 }
 .navbar-default{
@@ -49,28 +64,56 @@ body{
 	border: none !important;
 	height: 8.5rem;
 }
-.logo{
+.logo1{
 	background: url(../img/sprite.png)no-repeat;
 	background-position: 0 -435px;
 	background-size: 15rem;
-	width: 10rem;
-	height: 4.6rem;
-	float: left;
-	margin: 2rem 0 0 10%;
+	width: 20rem;
+	height: 4.7rem;
+	position: absolute;
+	left: 17.2%;
+	top: 2rem;
+}
+@media only screen and (max-width: 767px) {
+	.logo1{
+		background-position: 0 -258px;
+		background-size: 9rem;
+		width: 10rem;
+		height: 2.8rem;
+		position: absolute;
+		left: 10%;
+		top: 0.7rem;
+	}
+}
+@media only screen and (max-width: 550px) {
+	.logo1{
+		left: 11%;
+	}
+}
+@media only screen and (max-width: 380px) {
+	.logo1{
+		left: 5%;
+	}
 }
 .navbar-collapse{
-	margin: 0 0 0 50% !important;
+	float: right;
+	margin-right: 12.5% !important;
 }
-li a{
+li .menu{
 	height: 6.5rem;
-	width: 7rem;
+	width: 10rem;
 	text-align: center;
 	color: white !important;
 	font-size: 1.6rem;
 	margin: 2rem 0 0 0;
 }
-li a:hover{
+li .menu:hover{
 	border-bottom: 0.5rem solid white;
+}
+@media only screen and (max-width: 1000px) {
+	li .menu{
+		width: 7rem;
+	}
 }
 @media only screen and (max-width: 767px) {
 	.navbar-default{
@@ -78,44 +121,80 @@ li a:hover{
     }
     .navbar-collapse{
     	margin: 0 !important;
+    	width: 100%;
     }
-    li a{
+    li .menu:hover{
+		border-bottom: none;
+	}
+    li .menu{
     	margin: 0;
     	width: auto;
     	height: auto;
     }
-    .logo{
-    	background-position: 0 -290px;
-		background-size: 10rem;
-		width: 10rem;
-		height: 3rem;
-		margin: 0.7rem 0 0 10%;
-    }
+}
+.navbar-header{
+	margin-right: 5% !important;
+}
+@media only screen and (max-width: 380px) {
+	.navbar-header{
+		margin-right: -0.5rem !important;
+	}
 }
 .title{
 	margin: 1rem 0 2rem 0;
 	font-size: 1.6rem;
 }
+.title02{
+	color: black;
+}
+.job{
+	color: rgb(41,176,120);
+}
 .guide{
 	margin: 0 0 1rem 0;
-	padding: 1.5rem 0 1.5rem 0;
+	padding: 1.5rem 0 0.5rem 0;
 	border-top: 2px solid lightgray;
 	border-bottom: 1px solid lightgray;
-}
-.text1,.text2{
-	margin: 0 1rem;
-	cursor: pointer;
+	display: flex;
+	white-space: nowrap;
 }
 .text0{
 	color: darkgray;
+	margin: 0 0 0 1rem;
+}
+#nav ul{
+	list-style:none; 
+	display: flex;
+	margin: 0 0 1rem -2rem;
 }
 .text1{
+	color: black;
+	padding: 0.4rem;
+	font-size: 1.4rem;
+	margin: 0 1rem;
+}
+#nav ul .text1:hover{
 	color: white;
 	background-color: rgb(41,176,120);
-	padding: 0.4rem;
+	font-weight: bold;
 }
-.text2:hover{
-	color: rgb(41,176,120);
+.navdown .text1{
+	color: white;
+	background-color: rgb(41,176,120);
+	font-weight: bold;
+	}
+@media only screen and (max-width: 600px) {
+	.guide{
+		display: block;
+		padding: 1.5rem 0 1.3rem 0;
+	}
+	#nav ul{
+		display: block;
+		margin: -2.1rem 0 0 2.3rem;
+	}
+	.text1{
+		float: left;
+	}
 }
 .lead{
 	font-size: 1.6rem !important;
@@ -124,49 +203,26 @@ li a:hover{
 	margin: 2.5rem 0;
 	padding: 0 0 2rem 0;
 }
-.tree{
-	color: white;
-	padding: 1rem 0 0 0;
-	white-space:nowrap;
-}
-.web{
-	color: white;
-	white-space:nowrap;
-}
-.wechat{
-	color: white;
-	text-align: center;
-}
-@media only screen and (max-width:991px ) {
-	.web{
-		padding: 2rem 0;
-		margin: 2rem 0;
-		border-top: 1px solid white;
-		border-bottom: 1px solid white;
-	}
-}
-.bottom{
-	background-color: rgb(41,176,120);
-	color: white;
-	text-align: center;
-	border-top: 1px solid white;}
 .background{
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: auto;
-	height: 100%;
+	right: 0;
+	bottom: 0;
 	z-index: 1;
 	background-color: rgba(51,51,51,0.7);
 	color: white;
 	font-size: 1.5rem;
 	padding: 7rem 3rem 0 3rem;
-	margin: 1rem;
+	margin: 1rem 1.2rem 0 1.2rem;
 	display: none;
 }
 .text3{
 	text-align: center;
 	margin: 0 0 3rem 0;
+}
+.project{
+	margin: 0 0 5rem 0;
 }
 .layer1:hover .background{
 	display: block;
@@ -187,22 +243,6 @@ li a:hover{
 	margin: 1rem 0 0 0;
 	height: 12rem;
 }
-@media only screen and (max-width: 380px){
-	.layer3{
-		font-size: 0.8rem;
-		height: 15rem;
-	}
-	.layer20{
-		display: block;
-		height: 5rem;
-	}
-	.layer22{
-		margin: 3rem 0 0 -5rem;
-	}
-	.layer9{
-		margin: 0.6rem 0 0 0;
-	}
-} 
 .layer4{
 	font-weight: bold;
 	margin: 1rem 0;
@@ -211,7 +251,92 @@ li a:hover{
 .layer5{
 	font-size: 0.8rem;
 	padding: 0 1rem 0 0;
+	word-break: break-all;
 }
+@media only screen and (max-width: 1199px){
+	.layer3{
+		text-align: center;
+		padding: 0 3rem;
+	}
+	.img1{
+		text-align: left;
+		margin: 1rem 3rem 1rem 1rem;
+	}
+	.layer5{
+		text-align: left;
+	}
+}
+@media only screen and (max-width: 991px){
+	.layer4{
+		margin: 0 0 1rem 0;
+	}
+	.img1{
+		margin: 1rem 2rem 1rem 1rem;
+	}
+	.layer3{
+		padding: 0 1rem;
+		text-align: left;
+	}
+}
+@media only screen and (max-width: 767px){
+	.layer3{
+		text-align: center;
+		padding: 1rem 6rem;
+	}
+	.img1{
+		text-align: left;
+		margin: 1rem 6rem 1rem 3rem;
+	}
+	.layer5{
+		text-align: left;
+	}
+}
+@media only screen and (max-width: 600px){
+	.layer3{
+		padding: 1rem 2rem;
+	}
+	.img1{
+		margin: 1rem 3rem 1rem 3rem;
+	}
+}
+@media only screen and (max-width: 493px){
+	.layer3{
+		padding: 0 1rem;
+	}
+	.img1{
+		margin: 1rem 2rem 1rem 1rem;
+	}
+	.layer4{
+		margin: 0 1rem 1rem 0;
+	}
+}
+@media only screen and (max-width: 450px){
+	.layer4{
+		margin: 0 0 1rem 0;
+		text-align: left;
+	}
+}
+@media only screen and (max-width: 400px){
+	.layer3{
+		padding: 0;
+	}
+	.img1{
+		margin: 1rem;
+	}
+}
+@media only screen and (max-width: 380px){
+	.layer3{
+		font-size: 0.8rem;
+	}
+	.layer4{
+		margin: 0 0 1rem 0;
+	}
+} 
+@media only screen and (max-width: 335px){
+	.layer4{
+		padding: 1rem 0 0 0;
+	}
+} 
 .layer6{
 	border-bottom: 1px solid lightgray;
 	display: flex;
@@ -222,7 +347,7 @@ li a:hover{
 }
 .layer72{
 	display: flex;
-	margin:0 0 0 5rem;
+	margin:0 0 0 8rem;
 	padding: 0 0 0 1rem;
 	border-left: 1px solid lightgray;
 }
@@ -238,18 +363,18 @@ li a:hover{
 	height: 1.1rem;
 	margin: auto 0 auto 1rem;
 }
-.layer9{
+.layer91,.layer92{
 	color: darkgray;
 	line-height: 4rem;
 	white-space:nowrap;
 }
-.layer10{
+.layer101,.layer102{
 	color: rgb(255,92,0);
 	font-weight: bold;
 	margin: auto 0 auto 1rem;
 	white-space:nowrap; 
 }
-.layer11{
+.layer111,.layer112{
 	font-weight: bold;
 	margin: auto 0;
 }
@@ -259,7 +384,7 @@ li a:hover{
 }
 .layer20{
 	display: flex;
-	margin:0 0 0 1rem;
+	margin:0 0 0 4rem;
 	padding: 0 0 0 1rem;
 	white-space:nowrap;
 	border-left: 1px solid lightgray;
@@ -267,6 +392,109 @@ li a:hover{
 .layer22{
 	display: flex;
 }
+.layer24{
+		display: flex;
+	}
+@media only screen and (max-width: 1200px){
+	.layer72{
+		margin:0 0 0 12rem;
+	}
+	.layer20{
+	margin:0 0 0 8rem;
+	}
+}
+@media only screen and (max-width: 991px){
+	.layer72{
+		margin:0 0 0 6rem;
+	}
+	.layer20{
+	margin:0 0 0 2rem;
+	}
+}
+@media only screen and (max-width: 767px){
+	.layer72{
+		border-left: none;
+		margin: 0 0 0 2rem;
+	}
+	.layer20{
+		border-left: none;
+	}
+	.layer71,.layer21{
+		border-right: 1px solid lightgray;
+		width: 45%;
+	}
+}
+@media only screen and (max-width: 500px){
+	.layer71,.layer21{
+		width: 40%;
+	}
+	.layer20,.layer72{
+		margin: 0 0 0 1rem;
+	}
+}
+@media only screen and (max-width: 450px){
+	.layer71,.layer21{
+		width: 35%;
+	}
+	.layer20,.layer72{
+		margin: 0 0 0 0.5rem;
+	}
+}
+@media only screen and (max-width: 400px){
+	.layer20,.layer72{
+		margin: 0;
+	}
+}
+@media only screen and (max-width: 380px){
+	.layer20{
+		display: block;
+		height: 5rem;
+	}
+	.layer22{
+		margin: -1rem 0 0 32%;
+	}
+	.layer92{
+		margin: -0.5rem 0 0 62%;
+	}
+	.layer91{
+		margin: -0.5rem 0 0 20%;
+	}
+	.layer24{
+		margin: -0.9rem 0 0 20%;
+	}
+	.layer21{
+		display: block;
+	}
+	.layer71{
+		padding: 0 0 0 8%;
+	}
+	.layer72{
+		padding: 0 0 0 15%;
+		white-space: nowrap;
+	}
+}
+@media only screen and (max-width: 360px){
+	.layer22{
+		margin: -1rem 0 0 20%;
+	}
+	.layer92{
+		margin: -0.5rem 0 0 48%;
+	}
+}
+@media only screen and (max-width: 330px){
+	.layer22{
+		margin: -1rem 0 0 16%;
+	}
+	.layer92{
+		margin: -0.5rem 0 0 45%;
+	}
+	.layer91{
+		margin: -0.5rem 0 0 15%;
+	}
+	.layer24{
+		margin: -1rem 0 0 14%;
+	}
+} 
 .layer12{
 	color: darkgray;
 	border-right: 1px solid lightgray;
@@ -313,3 +541,110 @@ li a:hover{
 	line-height: 2rem;
 	padding: 1rem;
 }
+.bottom1{
+	background-color: rgb(41,176,120);
+	padding: 2rem 10%;
+}
+.skill1{
+	font-size: 1.6rem;
+	margin: -0.5rem 0 0 0;
+}
+.skill2{
+	display: flex;
+	margin: 5rem 0 0 0;
+}
+.skill3{
+	cursor: pointer;
+}
+.skill3:hover{
+	border-bottom: 1px solid white;
+}
+.skill4{
+	display: flex;
+}
+.skill5{
+	margin: 1.7rem 0 0 0;
+	cursor: pointer;
+}
+.skill6{
+	margin: 1.7rem 0 0 4rem;
+	cursor: pointer;
+}
+.skill5:hover{
+	border-bottom: 1px solid white;
+}
+.skill6:hover{
+	border-bottom: 1px solid white;
+}
+.wechat{
+	color: white;
+	float: right;
+	margin: 0 0 0 28%;
+}
+.text8{
+	margin: 0 0 0.5rem 0.2rem;
+	white-space:nowrap;
+}
+.tree,.web{
+	color: white;
+	padding: 1rem 0 0 0;
+	white-space:nowrap;
+	margin: 0 0 0 4%;
+}
+@media only screen and (max-width:1360px ) {
+	.wechat{
+		margin: 0 0 0 40%;
+	}
+	.tree{
+		margin: 0 0 0 -5%;
+	}
+}
+@media only screen and (max-width:991px ) {
+	.wechat{
+		margin: 2rem 0 0 40%;
+	}
+	.web{
+		margin: 0 0 0 20%;
+	}
+}
+@media only screen and (max-width:767px ) {
+	.skill2{
+		margin: 2rem 0 2rem 0;
+	}
+	.tree,.web{
+		margin: 0 0 0 30%;
+	}
+	.web{
+		padding: 2rem 0;
+	}
+}
+@media only screen and (max-width:500px ) {
+	.tree,.web{
+		margin: 0 0 0 20%;
+	}
+	.wechat{
+		margin: 2rem 0 0 30%;
+	}
+}
+@media only screen and (max-width:400px ) {
+	.tree,.web{
+		margin: 0 0 0 15%;
+	}
+	.wechat{
+		margin: 2rem 0 0 30%;
+	}
+}
+@media only screen and (max-width:360px ) {
+	.tree,.web{
+		margin: 0 0 0 10%;
+	}
+	.wechat{
+		margin: 2rem 0 0 25%;
+	}
+}
+.bottom2{
+	background-color: rgb(41,176,120);
+	color: white;
+	text-align: center;
+	border-top: 1px solid white;
+	line-height: 3rem;}

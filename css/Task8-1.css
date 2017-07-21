@@ -6,12 +6,16 @@ body{
 }
 .top{
 	background-color: white;
+}
+.top0{
+	background-color: white;
 	height: 3.3rem;
+	width: 70%;
+	margin: 0 auto !important;
 }
 .phone{
 	position: absolute;
 	top: 0.8rem;
-	left: 10%;
 	color: rgb(41,176,120);
 }
 .top1,.top2,.top3{
@@ -25,7 +29,7 @@ body{
 .top1{
 	background-position: 0 -86px;
 	height: 2.3rem;
-	margin: 0.6rem 10% 0 0;
+	margin: 0.6rem 0 0 0;
 }
 .top2{
 	background-position: 0 -58px;
@@ -35,12 +39,23 @@ body{
 	background-position: 0 -31px;
 	height: 2.2rem;
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 767px) {
+	.top0{
+		width: 90%;
+	}
+}
+@media only screen and (max-width: 380px) {
+	.top0{
+		width: 100%;
+	}
 	.phone{
-		left: 1rem;
+		margin: 0 0 0 -1rem;
 	}
 	.top1{
-		margin: 0.6rem 0.5rem 0 0;
+		margin: 0.6rem -1rem 0 0;
+	}
+	.top2,.top3{
+		margin: 0.6rem 0.2rem 0 0;
 	}
 }
 .navbar-default{
@@ -49,12 +64,44 @@ body{
 	border: none !important;
 	height: 8.5rem;
 }
+.logo1{
+	background: url(../img/sprite.png)no-repeat;
+	background-position: 0 -492px;
+	background-size: 15rem;
+	width: 20rem;
+	height: 5.8rem;
+	position: absolute;
+	left: 17.2%;
+	top: 1.5rem;
+}
+@media only screen and (max-width: 767px) {
+	.logo1{
+		background-position: 0 -262px;
+		background-size: 8rem;
+		width: 10rem;
+		height: 3.8rem;
+		position: absolute;
+		left: 10%;
+		top: 0.7rem;
+	}
+}
+@media only screen and (max-width: 550px) {
+	.logo1{
+		left: 11%;
+	}
+}
+@media only screen and (max-width: 380px) {
+	.logo1{
+		left: 5%;
+	}
+}
 .navbar-collapse{
-	margin: 0 0 0 50% !important;
+	float: right;
+	margin-right: 12.5% !important;
 }
 li a{
 	height: 6.5rem;
-	width: 7rem;
+	width: 10rem;
 	text-align: center;
 	color: white !important;
 	font-size: 1.6rem;
@@ -63,18 +110,35 @@ li a{
 li a:hover{
 	border-bottom: 0.5rem solid white;
 }
+@media only screen and (max-width: 1000px) {
+	li a{
+		width: 7rem;
+	}
+}
 @media only screen and (max-width: 767px) {
 	.navbar-default{
         height: auto;
     }
     .navbar-collapse{
     	margin: 0 !important;
+    	width: 100%;
     }
+    li a:hover{
+		border-bottom: none;
+	}
     li a{
     	margin: 0;
     	width: auto;
     	height: auto;
     }
+}
+.navbar-header{
+	margin-right: 5% !important;
+}
+@media only screen and (max-width: 380px) {
+	.navbar-header{
+		margin-right: -0.5rem !important;
+	}
 }
 #myCarousel{
 	margin: -1.6rem 0 0 0;
@@ -87,22 +151,24 @@ li a:hover{
 }
 .img1,.img2,.img3{
 	background: url(../img/sprite.png)no-repeat;
-	width: 5rem;
-	margin: 0 0 0 44%;
+	margin: 0 auto;
 }
 .img1{
 	background-position: 0 -162px;
 	height: 3.6rem;
+	width: 2.6rem;
 	background-size: 9.7rem;
 }
 .img2{
 	background-size: 12rem;
 	background-position: 0 -305px;
+	width: 4.5rem;
 	height: 3.6rem;
 }
 .img3{
 	background-position: 0 -211px;
-	height: 3.6rem;
+	height: 3.5rem;
+	width: 3.3rem;
 	background-size: 10rem;
 }
 .title1{
@@ -112,10 +178,10 @@ li a:hover{
 }
 .text1{
 	color: darkgray;
-	padding: 0 2.5rem;
+	padding: 0 20%;
 }
 .mainheadright{
-	padding: 4rem 0;
+	padding: 6rem 0 3rem 3rem !important;
 	border-left: 1px dashed lightgray;
 }
 .img4{
@@ -125,7 +191,7 @@ li a:hover{
 	width: 2rem;
 	height: 1rem;
 	float: left;
-	margin: 0.3rem -0.8rem 0 2rem;
+	margin: 0.4rem -0.5rem 0 2rem;
 }
 .text2{
 	color: rgb(41,176,120);
@@ -133,28 +199,43 @@ li a:hover{
 }
 .text3{
 	color: darkgray;
-	margin: 0 0 2rem 2rem;
+	margin: 0 0 1.5rem 2rem;
+	line-height: 2.5rem;
+}
+@media only screen and (max-width:991px ) {
+	.mainheadright{
+		padding: 4rem 0 3rem 7rem !important;
+		border-left: none;
+	}
 }
 @media only screen and (max-width:767px ) {
 	.mainhead{
-		margin: 0;
+		margin: 3rem 0 0 0;
 	}
 	.mainheadright{
-		border: none;
+		padding: 3rem 0 5rem 0 !important;
 	}
 	.img4{
 		margin: 0.3rem -1rem 0 40%;
 	}
 	.text3{
 		text-align: center;
-		margin: 1rem 0;
+		margin: 0 0 1rem 0;
+	}
+	.text1{
+		padding: 0 30%;
+	}
+}
+@media only screen and (max-width:380px ) {
+	.text1{
+		padding: 0 20%;
 	}
 }
 .howtostudy,.cooperate{
 	text-align: center;
 	font-weight: bold;
 	font-size: 2rem;
-	margin: 10rem 0 4rem 0;
+	margin: 8rem 0 4rem 0;
 }
 @media only screen and (max-width:767px ) {
 	.howtostudy{
@@ -164,6 +245,7 @@ li a:hover{
 .mainmiddle{
 	display: flex;
 	margin: 0 0 5rem 0;
+	padding: 0 2rem !important;
 }
 .step{
 	width: 5rem;
@@ -175,15 +257,15 @@ li a:hover{
 	color: rgb(41,176,120);
 	font-weight: bold;
 	font-size: 1.8rem;
-	padding: 1.3rem 4rem 0 0;
-	margin: 0 0 0 -1rem;
+	margin: 0 1rem;
+	padding: 1.4rem 4rem 0 0;
 }
 .number{
 	padding: 0 0 0 2rem;
 }
 .text5{
 	color: darkgray;
-	margin: 1rem 0 0 1rem;
+	margin: auto 0;
 }
 .img5{
 	background: url(../img/sprite.png)no-repeat;
@@ -191,18 +273,37 @@ li a:hover{
 	background-position: 0 -174px;
 	width: 4rem;
 	height: 2rem;
-	margin: 0.7rem 0 0 0.5rem;
+	position: absolute;
+	right: -3.2rem;
+	top: 1.4rem;
 }
 @media only screen and (max-width:991px ) {
-	.mainmiddle{
-		margin: 0 0 5rem 0;
-	}
 	.step{
 		margin: 0 0 0 2rem;
 	}
 	.text5{
-		padding: 0 2rem 0 0;
+		padding: 0 2rem;
 		
+	}
+}
+@media only screen and (max-width:767px ) {
+	.step{
+		margin: 0 0 0 20%;
+	}
+}
+@media only screen and (max-width:650px ) {
+	.step{
+		margin: 0 0 0 15%;
+	}
+}
+@media only screen and (max-width:500px ) {
+	.step{
+		margin: 0 0 0 10%;
+	}
+}
+@media only screen and (max-width:380px ) {
+	.step{
+		margin: 0 1rem;
 	}
 }
 .studentshow{
@@ -210,23 +311,28 @@ li a:hover{
 	border: 1px solid lightgray;
 	border-bottom: 2px solid lightgray;
 	border-radius: 5px;
-	margin: 0 1rem 3rem 1rem;
+	margin: 0 0.5rem 3rem 0.5rem;
 	text-align: center;
+}
+.img0{
+	margin: 1.5rem 0 2.5rem 0;
 }
 .name{
 	font-weight: bold;
+	font-size: 1.7rem;
 }
 .text6{
 	text-align: left;
 	line-height: 2rem;
-	padding: 2rem;
-}
-.show li[class="active"]{
-    background-color:#2bb179;
+	padding: 0.5rem 2.5rem 2rem 2.5rem;
 }
 .show li{
     top: 2rem;
     position: relative;
+    background-color: white !important;
+}
+.show li[class="active"]{
+    background-color:#2bb179 !important;
 }
 @media only screen and (max-width:767px ) {
 	.cooperate{
@@ -237,28 +343,94 @@ li a:hover{
 	background-color: white;
 	margin: 0 0 10rem 0;
 	height: 13rem;
-	box-shadow: 0.1rem 0.1rem 0.2rem darkgray;
+	box-shadow: 0 0 0.2rem darkgray;
+	border-radius: 1%;
+	display: flex;
 }
-.logo{
+.logo2,.logo3,.logo4,.logo5,.logo6{
 	width: 20% !important;
 	text-align: center;
 	cursor: pointer;
-	background-color: white;
 }
-.logo:hover{
-	box-shadow: 0 0 0.2rem lightgray inset;
+.logo3,.logo4,.logo5{
+	margin: 0 0.5rem;
+}
+.logo2{
+	padding: 0.4rem 0;
+	margin-right: 0.5rem;
+	margin-left: 0.1rem;
+}
+.logo3{
+	padding: 3.8rem 0;
+}
+.logo4{
+	padding: 0.7rem 0;
+}
+.logo5{
+	padding: 2.7rem 0;
+}
+.logo6{
+	padding: 1.1rem 0;
+	margin-left: 0.5rem;
+	margin-right: 0.05rem;
+}
+.logo2:hover{
+	box-shadow: 0 0 1rem lightgray;
+}
+.logo3:hover{
+	box-shadow: 0 0 1rem lightgray;
+}
+.logo4:hover{
+	box-shadow: 0 0 1rem lightgray;
+}
+.logo5:hover{
+	box-shadow: 0 0 1rem lightgray;
+}
+.logo6:hover{
+	box-shadow: 0 0 1rem lightgray;
 }
 @media only screen and (max-width:991px ) {
+	.logo2.logo2,.logo3,.logo4,.logo5,.logo6{
+		width: 100% !important;
+	}
+	.img6{
+		width: auto;
+		max-width: 100%;
+	}
+	.logo5{
+		padding-top: 3.7rem;
+	}
+}
+@media only screen and (max-width:780px ) {
 	.company{
+		display: block;
+		background: none;
+		box-shadow: none;
+		height: auto;
+	}
+	.logo2:hover{
 		box-shadow: none;
 	}
-	.logo{
-		width: 100% !important;
-		box-shadow: 0 0 0.2rem lightgray;
+	.logo3:hover{
+		box-shadow: none;
 	}
-	.friend{
-		margin: 5rem 0 0 0;
+	.logo4:hover{
+		box-shadow: none;
 	}
+	.logo5:hover{
+		box-shadow: none;
+	}
+	.logo6:hover{
+		box-shadow: none;
+	}
+	.logo2.logo2,.logo3,.logo4,.logo5,.logo6{
+		width: 20rem !important;
+		margin: 1rem auto;
+		background-color: white;
+	}
+}
+.friend{
+	background-color: white;
 }
 .link{
 	text-align: center;
@@ -267,41 +439,134 @@ li a:hover{
 	margin: 1rem 0 2rem 0;
 }
 .parts{
-	padding: 0 12%;
+	padding: 0 10% 2rem 12%;
+	background-color: white;
 }
 .text7{
-	width: 10rem;
-	margin: 1%;
+	width: 6rem;
+	height: 2rem;
+	margin: 0 2rem 1rem 2rem;
 	float: left;
 	color: darkgray;
-	margin: -0.5rem 0 2rem 0;
 	white-space:nowrap;
 	cursor: pointer;
 }
-.tree{
-	color: white;
-	padding: 1rem 0 0 0;
-	white-space:nowrap;
+.text7:hover{
+	border-bottom: 1px solid rgb(41,176,120);
 }
-.web{
-	color: white;
-	white-space:nowrap;
+@media only screen and (max-width:1360px ) {
+	.parts{
+	padding: 0 3% 2rem 5%;
+	}
+	.text7{
+		margin: 0 1rem 1rem 1rem;
+	}
+}
+.skill1{
+	font-size: 1.6rem;
+	margin: -0.5rem 0 0 0;
+}
+.skill2{
+	display: flex;
+	margin: 5rem 0 0 0;
+}
+.skill3{
+	cursor: pointer;
+}
+.skill3:hover{
+	border-bottom: 1px solid white;
+}
+.skill4{
+	display: flex;
+}
+.skill5{
+	margin: 1.7rem 0 0 0;
+	cursor: pointer;
+}
+.skill6{
+	margin: 1.7rem 0 0 4rem;
+	cursor: pointer;
+}
+.skill5:hover{
+	border-bottom: 1px solid white;
+}
+.skill6:hover{
+	border-bottom: 1px solid white;
 }
 .wechat{
 	color: white;
-	text-align: center;
+	float: right;
+	margin: 0 0 0 28%;
 }
-@media only screen and (max-width:991px ) {
-	.web{
-		padding: 2rem 0;
-		margin: 2rem 0;
-		border-top: 1px solid white;
-		border-bottom: 1px solid white;
+.text8{
+	margin: 0 0 0.5rem 0.2rem;
+	white-space:nowrap;
+}
+.tree,.web{
+	color: white;
+	padding: 1rem 0 0 0;
+	white-space:nowrap;
+	margin: 0 0 0 4%;
+}
+@media only screen and (max-width:1360px ) {
+	.wechat{
+		margin: 0 0 0 40%;
+	}
+	.tree{
+		margin: 0 0 0 -5%;
 	}
 }
-.bottom{
+@media only screen and (max-width:991px ) {
+	.wechat{
+		margin: 2rem 0 0 40%;
+	}
+	.web{
+		margin: 0 0 0 20%;
+	}
+}
+@media only screen and (max-width:767px ) {
+	.skill2{
+		margin: 2rem 0 2rem 0;
+	}
+	.tree,.web{
+		margin: 0 0 0 30%;
+	}
+	.web{
+		padding: 2rem 0;
+	}
+}
+@media only screen and (max-width:500px ) {
+	.tree,.web{
+		margin: 0 0 0 20%;
+	}
+	.wechat{
+		margin: 2rem 0 0 30%;
+	}
+}
+@media only screen and (max-width:400px ) {
+	.tree,.web{
+		margin: 0 0 0 15%;
+	}
+	.wechat{
+		margin: 2rem 0 0 30%;
+	}
+}
+@media only screen and (max-width:360px ) {
+	.tree,.web{
+		margin: 0 0 0 10%;
+	}
+	.wechat{
+		margin: 2rem 0 0 25%;
+	}
+}
+.bottom1{
+	background-color: rgb(41,176,120);
+	padding: 2rem 10%;
+}
+.bottom2{
 	background-color: rgb(41,176,120);
 	color: white;
 	text-align: center;
 	border-top: 1px solid white;
+	line-height: 3rem;
 }
